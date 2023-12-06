@@ -1,0 +1,15 @@
+version: 1
+
+seeds:
+  - name: 'course_info'
+    description: 'course ID, course name, course description, course status'
+    config:
+      +delimiter: ","
+    docs:
+      show: true
+    +column_types:
+      course_id: varchar(20)
+      course_name: varchar(100000)
+      course_description: varchar(100000)
+      course_status: varchar(6)
+
